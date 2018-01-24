@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>reqRes</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Header -->
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+				<a class="navbar-brand" href="#">reqRes</a>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Surveys
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="index.html">Surveys</a>
+							<a class="dropdown-item" href="sections.html">Sections</a>
+							<a class="dropdown-item" href="questions.html">Questions</a>
+						</div>
+					</li>
+				</ul>
+				<a class="btn btn-outline-dark my-2 my-sm-0" href="submit">Logout</a>
+			</nav>
+		<!-- END: Header -->
+		<!-- Main Container -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 d-none d-sm-block bg-light sidebar">
+						<div class="d-flex justify-content-between">
+							<h2>Surveys</h2>
+							<a href="surveys-new.html" class="btn btn-outline-success">Add</a>
+						</div>
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+								<span class="badge badge-secondary">Survey</span>
+								<h5>My State</h5>
+							</a>
+						</div>
+					</div>
+					<main class="col-sm-9 ml-sm-auto pt-3" role="main">
+						<h1>My State</h1>
+						<form class="row">
+							<div class="col">
+								<div class="form-group">
+									<label for="surveyName">Survey Name</label>
+									<input type="text" class="form-control" id="surveyName" placeholder="Survey name" value="My State">
+								</div>
+								<div class="form-group">
+									<label for="surveyIntroduction">Survey Introduction</label>
+									<textarea class="form-control" id="surveyIntroduction" rows="3">Welcome to the My State survey</textarea>
+								</div>
+								<div class="form-group">
+									<label for="surveyCompletion">Survey Completion</label>
+									<textarea class="form-control" id="surveyCompletion" rows="3">Thank you for taking the survey</textarea>
+								</div>
+
+								<h2>Sections</h2>
+								<div class="card">
+									<div class="card-header">
+										Add Section
+									</div>
+									<div class="card-body row">
+										<div class="col">
+											<h5>Create New Section</h5>
+											<div class="form-group">
+												<label for="surveyName">Section Name</label>
+												<input type="text" class="form-control" id="sectionName" placeholder="Section name">
+											</div>
+											<a href="sections-view.html" class="btn btn-success">Create</a>
+										</div>
+										<div class="col">
+											<h5>Choose an Existing Section</h5>
+											<div class="form-group">
+												<label for="existingSection">Section Name</label>
+												<select class="form-control" id="existingSection">
+													<option disabled>No existing sections</option>
+												</select>
+											</div>
+											<button type="submit" class="btn btn-success">Create</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="card">
+									<div class="card-header">
+										Actions
+									</div>
+									<div class="card-body">
+										<button type="submit" class="btn btn-success">Create</button>
+										<a href="index.html" class="btn text-danger">Cancel</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<!-- END: Main Container -->
+		<!-- JS Scripts -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

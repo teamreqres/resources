@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>reqRes</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Header -->
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+				<a class="navbar-brand" href="#">reqRes</a>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Sections
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="index.html">Surveys</a>
+							<a class="dropdown-item" href="sections.html">Sections</a>
+							<a class="dropdown-item" href="questions.html">Questions</a>
+						</div>
+					</li>
+				</ul>
+				<a class="btn btn-outline-dark my-2 my-sm-0" href="submit">Logout</a>
+			</nav>
+		<!-- END: Header -->
+		<!-- Main Container -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 d-none d-sm-block bg-light sidebar">
+						<div class="d-flex justify-content-between">
+							<h2>Sections</h2>
+							<a href="surveys-new.html" class="btn btn-outline-success">Add</a>
+						</div>
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+								<span class="badge badge-secondary">Section</span>
+								<h5>Today</h5>
+							</a>
+						</div>
+					</div>
+					<main class="col-sm-9 ml-sm-auto pt-3" role="main">
+						<h1>Today</h1>
+						<form class="row">
+							<div class="col">
+								<div class="form-group">
+									<label for="sectionName">Section Name</label>
+									<input type="text" class="form-control" id="sectionName" placeholder="Survey name" value="Today">
+								</div>
+								<div class="form-group">
+									<label for="sectionIntroduction">Section Introduction</label>
+									<textarea class="form-control" id="sectionIntroduction" rows="3">This is the Today section</textarea>
+								</div>
+
+								<h2>Questions</h2>
+								<div class="card mb-3">
+									<div class="card-header">
+										Add Question
+									</div>
+									<div class="card-body row">
+										<div class="col">
+											<h5>Create New Question</h5>
+											<div class="form-group">
+												<label for="questionName">Question Name</label>
+												<input type="text" class="form-control" id="questionName" placeholder="Question name">
+											</div>
+											<a href="questions-view.html" class="btn btn-success">Create</a>
+										</div>
+										<div class="col">
+											<h5>Choose an Existing Question</h5>
+											<div class="form-group">
+												<label for="existingQuestion">Question Name</label>
+												<select class="form-control" id="existingQuestion">
+													<option disabled>No existing questions</option>
+												</select>
+											</div>
+											<button type="submit" class="btn btn-success">Create</button>
+										</div>
+									</div>
+								</div>
+								<a href="sections-view-add-question.html" class="btn btn-success">Add Question</a>
+							</div>
+							<div class="col-sm-4">
+								<div class="card mb-3">
+									<div class="card-header">
+										Actions
+									</div>
+									<div class="card-body">
+										<button type="submit" class="btn btn-success">Create</button>
+										<a href="index.html" class="btn text-danger">Cancel</a>
+									</div>
+								</div>
+								<div class="card mb-3">
+									<div class="card-header">
+										Included in:
+									</div>
+									<ul class="list-group list-group-flush">
+										<li>
+											<a href="surveys-view-with-section.html" class="list-group-item list-group-item-action flex-column align-items-start">
+												<span class="badge badge-secondary">Survey</span>
+												<br>My State
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<!-- END: Main Container -->
+		<!-- JS Scripts -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
